@@ -1,16 +1,19 @@
-
-import './App.css'
+import NavBar from "./componentes/NavBar/NavBar";
+import ItemListContainer from "./componentes/ItemListContainer";
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <>
-      <div>
+  
+    <div id="app">
+    <NavBar/>
+    <ItemListContainer saludo="De Mendoza para el mundo" />
+    </div>
+    
       
-      </div>
-      
-    </>
+    
   )
 }
 

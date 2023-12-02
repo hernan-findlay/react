@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Pacifico&display=swap');
+
+html, body{
+    
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#navbar ul{
+    font-family: 'Ephesis', cursive;
+    }
+#navbar h1{
+    font-family: 'Pacifico', cursive;
+}
+

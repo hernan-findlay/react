@@ -1,0 +1,33 @@
+
+
+
+
+#navbar{
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .9375rem;
+    ul{
+        display: flex;
+        gap: 1.5625rem;
+      li{
+        font-size: 20px;
+      }
+        
+        
+    }
+    .brand{
+        text-size-adjust: 3.125rem;
+        font-size: 30px;
+        color:blueviolet;
+    }
+    .cartwidget{
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        background-color: blueviolet;
+        
+    }
+
+}
