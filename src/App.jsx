@@ -12,7 +12,7 @@ function App() {
     <NavBar/>
     <ItemListContainer saludo="De Mendoza para el mundo" />
 
-    {/* <ItemCount stock={10} initial={1} onAdd={}/> */}
+   <ItemCount stock={10} /> 
     </div>
     
       
