@@ -17,12 +17,12 @@
   }
   
   .item .titulo {
-    margin: 5px 0;
+    color: #6e0a66;
     font-weight: bold;
   }
   
   .item .precio {
-    margin: 5px 0;
+    margin: 5px ;
     font-size: 15px;
     font-weight: bold;
   }

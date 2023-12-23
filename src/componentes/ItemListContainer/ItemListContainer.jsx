@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-import obtenerProductos from "../utilidades/data";
-import ItemList from "../ItemList/ItemList";
+import obtenerProductos from "../Utilidades/data";
+import Itemlist from "../Itemlist/Itemlist";
 import { useParams } from "react-router-dom";
-import { MoonLoader } from "react-spinners"
+import { MoonLoader } from "react-spinners";
 
 import "./ItemListContainer.css";
 
@@ -43,7 +43,7 @@ const ItemListContainer = ({ saludo }) => {
       ) : (
         <div className="item-list-container">
           <p className="saludo">{saludo}</p>
-          <ItemList productos={productos} />
+          <Itemlist productos={productos} />
         </div>
       )}
     </>

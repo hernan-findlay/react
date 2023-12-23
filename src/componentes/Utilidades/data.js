@@ -2,7 +2,7 @@ const productos = [
 
     {
         id: "vino1",
-        nombre: "atardecer1",
+        nombre: "Atardecer1",
         stock:8,
         precio: 1500,
         categoria: "tinto",
@@ -10,7 +10,7 @@ const productos = [
     },
     {
         id: "vino2",
-        nombre: "atardecer2",
+        nombre: "Atardecer2",
         stock:6,
         precio: 1500,
         categoria: "tinto",
@@ -18,7 +18,7 @@ const productos = [
     },
     {
         id: "vino3",
-        nombre: "atardecer3",
+        nombre: "Atardecer3",
         stock: 4,
         precio: 1500,
         categoria: "blanco",
@@ -26,7 +26,7 @@ const productos = [
     },
     {
         id: "vino4",
-        nombre: "atardecer4",
+        nombre: "Atardecer4",
         stock: 8,
         precio: 1500,
         categoria: "blanco",
@@ -34,7 +34,7 @@ const productos = [
     },
     {
         id: "vino5",
-        nombre: "atardecer6",
+        nombre: "Atardecer6",
         stock: 7,
         precio: 1500,
         categoria: "rosa",
@@ -42,7 +42,7 @@ const productos = [
     },
     {
         id: "vino6",
-        nombre: "atardecer6",
+        nombre: "Atardecer6",
         stock:5,
         precio: 1500,
         categoria: "rosa",
