@@ -12,7 +12,7 @@ const NavBar = () => {
                     <a href="">Vino Tinto</a>
                 </li>
                 <li>
-                    <a href="">Vino Torrontes</a>
+                    <a href="">Vino Rosa</a>
                 </li>
             </ul>
 
