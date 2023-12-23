@@ -13,18 +13,29 @@
   }
   
   .item .image {
-    padding: 30px;
+    padding: 20px;
+    width: 150px;
+    
   }
   
   .item .titulo {
     color: #6e0a66;
     font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    
   }
   
   .item .precio {
-    margin: 5px ;
-    font-size: 15px;
+    margin: 15px ;
+    font-size: 20px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #1b03039a;
+    font-family: 'Pacifico', cursive;
   }
   
   .item .link {

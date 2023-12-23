@@ -1,23 +1,29 @@
 import NavBar from "./componentes/NavBar/NavBar";
 import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer";
 import './App.css';
-import ItemCount from "./componentes/ItemCount/ItemCount";
+import { BrowserRouter,Routes,Route, Navigate } from "react-router-dom";
+import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
   
 
   return (
-  
-    <div id="app">
-    <NavBar/>
-    <ItemListContainer saludo="De Mendoza para el mundo" />
-
-   <ItemCount stock={10} /> 
-    </div>
+    <BrowserRouter>
     
+      <NavBar/>
+
+
+      <Routes>
+      <Route path="/" element={<ItemListContainer saludo="De Mendoza para el mundo" />}/>
+      <Route path="/categoria/:categoria" element={<ItemListContainer saludo="De Mendoza para el mundo"/>} />
+
+      <Route path="/detalle/:id" element={<ItemDetailContainer/>}/>
+      <Route path="*" element={<Navigate to="/"/>}/>
+      </Routes>
+    </BrowserRouter>
       
     
-  )
+  );
 }
 
-export default App
+export default App;

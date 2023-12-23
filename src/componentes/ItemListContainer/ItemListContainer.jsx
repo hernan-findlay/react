@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import obtenerProductos from "../Utilidades/data";
-import Itemlist from "../Itemlist/Itemlist";
+import Itemlist from "../ItemList/Itemlist";
 import { useParams } from "react-router-dom";
 import { MoonLoader } from "react-spinners";
 
@@ -38,7 +38,7 @@ const ItemListContainer = ({ saludo }) => {
     <>
       {cargando ? (
         <div className="cargando">
-          <MoonLoader color="black" />
+          <MoonLoader  />
         </div>
       ) : (
         <div className="item-list-container">
