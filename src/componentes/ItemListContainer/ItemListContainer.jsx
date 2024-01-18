@@ -6,6 +6,8 @@ import { useParams } from "react-router-dom";
 import { RiseLoader } from "react-spinners";
 
 import "./ItemListContainer.css";
+import { collection,getDocs,query,where } from "firebase/firestore"
+import db from "../../db/db";
 
 const ItemListContainer = ({ saludo }) => {
   const [productos, setProductos] = useState([]);
@@ -15,23 +17,25 @@ const ItemListContainer = ({ saludo }) => {
 
   useEffect(() => {
     setCargando(true)
-    obtenerProductos
-      .then((respuesta) => {
-        if (categoria) {
-          const productosFiltrados = respuesta.filter(
-            (producto) => producto.categoria === categoria
-          );
-          setProductos(productosFiltrados);
-        } else {
-          setProductos(respuesta);
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-      })
-      .finally(() => {
-        setCargando(false);
+
+    let consulta
+    const productosRef=collection(db, "productos")
+    if(categoria){
+      consulta=query(productosRef,where("categoria","==",categoria))
+    }else{
+      consulta=productosRef
+    }
+    
+    getDocs(consulta)
+    .then((respuesta)=>{
+      let productosDb=respuesta.docs.map((producto)=>{
+        return {id:producto.id, ...producto.data()};
       });
+      setProductos(productosDb)
+    } )
+    .catch((error)=>console.log(error))
+    .finally(()=>setCargando(false))
+    
   }, [categoria]);
 
   return (
