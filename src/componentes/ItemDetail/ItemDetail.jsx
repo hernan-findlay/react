@@ -26,7 +26,7 @@ const ItemDetail = ({ producto }) => {
         {toggle ? (
           <>
             <Link className="button-terminar" to="/carrito">
-              Terminar mi compra
+              Ir al carrito
             </Link>
             <Link className="button-terminar" to="/">
               Seguir comprando

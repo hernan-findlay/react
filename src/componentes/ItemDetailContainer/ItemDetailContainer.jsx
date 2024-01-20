@@ -25,7 +25,7 @@ const ItemDetailContainer = () => {
   return (
     <div>
       {productoExiste ? (
-        <div>Producto no existe</div>
+        <div>Este producto no lo tenemos</div>
       ) : (
         <ItemDetail producto={producto} />
       )}
